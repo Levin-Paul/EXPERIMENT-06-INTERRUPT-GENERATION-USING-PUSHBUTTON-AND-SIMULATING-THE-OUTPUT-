@@ -95,10 +95,9 @@ HAL_TIM_Base_Start(&htim2);
       HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_1);
 ```
 ## Output screen shots of proteus  :
- 
- 
- ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
- 
- 
+<img width="612" height="706" alt="exp6off" src="https://github.com/user-attachments/assets/e42b9fde-22bd-49a9-8319-67201114b2f1" />
+<img width="877" height="750" alt="exp6on" src="https://github.com/user-attachments/assets/640fe10f-57f0-46bc-8722-b496b2080f13" />
+
+
 ## Result :
 Interfacing a push button and interrupt genrateion is simulated using proteus 
