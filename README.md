@@ -90,9 +90,28 @@ https://engineeringxpert.com/wp-content/uploads/2022/04/26.png
 
 ## STM 32 CUBE PROGRAM :
 ```
-HAL_TIM_Base_Start(&htim2);
-      HAL_TIM_PWM_Init(&htim2);
-      HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_1);
+
+#include "main.h"
+void SystemClock_Config(void);
+static void MX_GPIO_Init(void);
+int main(void)
+{
+  HAL_Init();
+  SystemClock_Config();
+  MX_GPIO_Init();
+  
+  while (1)
+  {
+  }
+}
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+	if(GPIO_Pin==GPIO_PIN_0)
+	{
+		HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_5);
+
+	}
+}
 ```
 ## Output screen shots of proteus  :
 <img width="612" height="706" alt="exp6off" src="https://github.com/user-attachments/assets/e42b9fde-22bd-49a9-8319-67201114b2f1" />
